@@ -24,6 +24,8 @@
 ```
 
 ## Create Database(DynamoDB)
+1. Create table
+    - Name: recipies
 ```
 {
 "id": {"S": "1"},
@@ -50,6 +52,10 @@
 ```
 
 ## Lambda Code
+1. Create Lambda Function
+1. Create Custom Role
+1. Change code source 
+1. Change table name and deploy
 ```
 const AWS = require('aws-sdk'); const dynamo = new AWS.DynamoDB.DocumentClient();
 
@@ -66,3 +72,14 @@ const response = {
 };
 ```
 
+## Configure API Gateway
+1. Create REST API
+1. Create resource 
+    - Resource Name: recipies
+
+1. Create method
+1. Integrate with Lambda
+1. Choose Lambda function
+1. Enable CORS
+1. Update API on app.js
+1. Reupload app.js again
