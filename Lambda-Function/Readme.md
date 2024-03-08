@@ -6,6 +6,7 @@
 1. Upload files to S3 Bucket
 1. Enable Static WebSite
 1. Set bucket policy
+1. Get URL in S3 Bucket Properties
 
 ```
 {
